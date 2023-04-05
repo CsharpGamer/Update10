@@ -37,7 +37,7 @@ fun SetupNavigationHost(
         composable(
             Screen.ShowTimeslotDetails.route,
             arguments = listOf(
-                navArgument("id") {/* defaultValue = "noerror" */ }
+                navArgument("id") {}
             )
         ) { backStackEntry ->
             backStackEntry.arguments?.getString("id")
